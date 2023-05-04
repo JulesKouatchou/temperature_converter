@@ -6,13 +6,15 @@ import yaml
 #---------------------
 # Import local modules
 #---------------------
-cur_dir = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(cur_dir)
-sys.path.append(cur_dir + os.sep + 'functions')
-sys.path.append(cur_dir + os.sep + 'shared')
-import temperature_functions
+#cur_dir = os.path.dirname(os.path.abspath(__file__))
+#sys.path.append(cur_dir)
+#sys.path.append(cur_dir + os.sep + 'functions')
+#sys.path.append(cur_dir + os.sep + 'shared')
+#import temperature_functions
 
 #print(sys.path)
+
+from functions import temperature_functions
 
 # Obtain the YAML file name from the command line
 #-------------------------------------------

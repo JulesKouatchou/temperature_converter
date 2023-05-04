@@ -13,7 +13,8 @@
 """
 
 # Local modules
-import constants
+from shared import constants
+#import constants
 
 #--------------------------------------------------------------------------
 
