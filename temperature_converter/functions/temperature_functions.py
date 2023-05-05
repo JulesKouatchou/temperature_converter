@@ -104,7 +104,7 @@ def convert_fahrenheit_to_celcius(temperatureF):
        temperatureC : float
             Temperature in degree Celcius
     """
-    return (9.0/5.0)*(temperatureF - 32.0)
+    return (5.0/9.0)*(temperatureF - 32.0)
 
 #--------------------------------------------------------------------------
 
