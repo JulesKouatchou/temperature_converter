@@ -24,4 +24,7 @@ temperature_converter/
         shared/
             __init__.py
             constants.py
+        tests/
+            __init__.py
+            test_temperature_functions.py
 ```
