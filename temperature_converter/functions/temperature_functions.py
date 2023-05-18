@@ -4,11 +4,11 @@
    Module containing utility functions for converting temperatures
    from one unit to another. It has the following functions:
 
-      - convert_celcius_to_kelvin
-      - convert_celcius_to_fahrenheit
-      - convert_kelvin_to_celcius
+      - convert_celsius_to_kelvin
+      - convert_celsius_to_fahrenheit
+      - convert_kelvin_to_celsius
       - convert_kelvin_to_fahrenheit
-      - convert_fahrenheit_to_celcius
+      - convert_fahrenheit_to_celsius
       - convert_fahrenheit_to_kelvin
 """
 
@@ -18,32 +18,32 @@ from shared import constants
 
 #--------------------------------------------------------------------------
 
-def convert_celcius_to_kelvin(temperatureC):
+def convert_celsius_to_kelvin(temperatureC):
     """
-       Convert temperature from Celcius to Kelvin.
+       Convert temperature from Celsius to Kelvin.
        
        Parameters
        ----------
        temperatureC : float
-            Temperature in degree Celcius
+            Temperature in degree Celsius
 
        Returns
        -------
        temperatureK : float
             Temperature in degree Kelvin
     """
-    return temperatureC + constants.zeroCelcius
+    return temperatureC + constants.zeroCelsius
 
 #--------------------------------------------------------------------------
 
-def convert_celcius_to_fahrenheit(temperatureC):
+def convert_celsius_to_fahrenheit(temperatureC):
     """
-       Convert temperature from Celcius to Fahrenheit.
+       Convert temperature from Celsius to Fahrenheit.
 
        Parameters
        ----------
        temperatureC : float
-            Temperature in degree Celcius
+            Temperature in degree Celsius
 
        Returns
        -------
@@ -54,9 +54,9 @@ def convert_celcius_to_fahrenheit(temperatureC):
 
 #--------------------------------------------------------------------------
 
-def convert_kelvin_to_celcius(temperatureK):
+def convert_kelvin_to_celsius(temperatureK):
     """
-       Convert temperature from Kelvin to Celcius.
+       Convert temperature from Kelvin to Celsius.
        
        Parameters
        ----------
@@ -66,9 +66,9 @@ def convert_kelvin_to_celcius(temperatureK):
        Returns
        -------
        temperatureC : float
-            Temperature in degree Celcius
+            Temperature in degree Celsius
     """
-    return temperatureK - constants.zeroCelcius
+    return temperatureK - constants.zeroCelsius
 
 #--------------------------------------------------------------------------
 
@@ -86,13 +86,13 @@ def convert_kelvin_to_fahrenheit(temperatureK):
        temperatureF : float
             Temperature in degree Fahrenheit
     """
-    return (9.0/5.0)*(temperatureK - constants.zeroCelcius) + 32.0
+    return (9.0/5.0)*(temperatureK - constants.zeroCelsius) + 32.0
 
 #--------------------------------------------------------------------------
 
-def convert_fahrenheit_to_celcius(temperatureF):
+def convert_fahrenheit_to_celsius(temperatureF):
     """
-       Convert temperature from Fahrenheit to Celcius.
+       Convert temperature from Fahrenheit to Celsius.
 
        Parameters
        ----------
@@ -102,7 +102,7 @@ def convert_fahrenheit_to_celcius(temperatureF):
        Returns
        -------
        temperatureC : float
-            Temperature in degree Celcius
+            Temperature in degree Celsius
     """
     return (5.0/9.0)*(temperatureF - 32.0)
 
@@ -122,11 +122,11 @@ def convert_fahrenheit_to_kelvin(temperatureF):
        temperatureK : float
             Temperature in degree Kelvin
     """
-    return (5.0/9.0)*(temperatureF - 32.0) +  constants.zeroCelcius
+    return (5.0/9.0)*(temperatureF - 32.0) +  constants.zeroCelsius
 
 
 #--------------------------------------------------------------------------
 
 if __name__ == '__main__':
-   print (convert_celcius_to_kelvin(15.7))
-   print (convert_kelvin_to_celcius(302.9))
+   print (convert_celsius_to_kelvin(15.7))
+   print (convert_kelvin_to_celsius(302.9))

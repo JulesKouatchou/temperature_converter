@@ -35,10 +35,10 @@ with open(file_name, 'r') as yaml_file:
 #--------------------------------------------
 for key, value in yaml_content.items():
     if key == 'KtoC':
-        print("Kelvin to Celcius")
+        print("Kelvin to Celsius")
               #-----------------
         for val in value['vals']:
-            var = temperature_functions.convert_kelvin_to_celcius(val)
+            var = temperature_functions.convert_kelvin_to_celsius(val)
             print("\t {:7.3f} degree K --> {:7.3f} degree C".format(val, var))
 
     if key == 'KtoF':
@@ -49,17 +49,17 @@ for key, value in yaml_content.items():
             print("\t {:7.3f} degree K --> {:7.3f} degree F".format(val, var))
 
     if key == 'CtoK':
-        print("Celcius to Kelvin")
+        print("Celsius to Kelvin")
               #-----------------
         for val in value['vals']:
-            var = temperature_functions.convert_celcius_to_kelvin(val)
+            var = temperature_functions.convert_celsius_to_kelvin(val)
             print("\t {:7.3f} degree C --> {:7.3f} degree K".format(val, var))
 
     if key == 'CtoF':
-        print("Celcius to Fahrenheit")
+        print("Celsius to Fahrenheit")
               #----------------------
         for val in value['vals']:
-            var = temperature_functions.convert_celcius_to_fahrenheit(val)
+            var = temperature_functions.convert_celsius_to_fahrenheit(val)
             print("\t {:7.3f} degree C --> {:7.3f} degree F".format(val, var))
 
     if key == 'FtoK':
@@ -70,8 +70,8 @@ for key, value in yaml_content.items():
             print("\t {:7.3f} degree F --> {:7.3f} degree K".format(val, var))
 
     if key == 'FtoC':
-        print("Fahrenheit to Celcius")
+        print("Fahrenheit to Celsius")
               #----------------------
         for val in value['vals']:
-            var = temperature_functions.convert_fahrenheit_to_celcius(val)
+            var = temperature_functions.convert_fahrenheit_to_celsius(val)
             print("\t {:7.3f} degree F --> {:7.3f} degree C".format(val, var))
