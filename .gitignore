@@ -1,0 +1,13 @@
+*.swp 
+*.pyc
+*.log
+*.LOG
+__pycache__
+.pytest_cache
+*.ipynb_checkpoints
+.vscode
+.idea
+public
+docs/build
+test/scratch
+.DS_Store
